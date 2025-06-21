@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Start – svetihome"
+title: "~"
 ---
 
 # Servus und grüß Gott! 👋
