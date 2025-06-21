@@ -12,6 +12,8 @@ Hier dokumentiere ich mein Homelab-Abenteuer mit meinem Heimserver.
 - 🏠 **Smart Home:** 200+ Geräte über Homebridge
 - 💾 **Nextcloud:** Private Cloud für die ganze Familie  
 - 🔒 **VPN:** Sicherer Zugang von unterwegs
+- 🎬 **Plex:** Medienserver für Filme und Videos  
+- 📸 **Immich:** Fotoverwaltung
 - ...
 
 ## Neueste Beiträge:
