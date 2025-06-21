@@ -22,7 +22,7 @@ plugins:
 # Navigation
 header_pages:
   - start.md
-  - smart-home.md
+  - pages/smart-home.md
   - speicher-backup.md
   - sicherheit.md
   - infrastruktur.md
