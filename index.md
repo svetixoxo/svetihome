@@ -13,6 +13,7 @@ Hier dokumentiere ich mein Homelab-Abenteuer mit meinem Heimserver.
 - 💾 **Nextcloud:** Private Cloud für die ganze Familie  
 - 🎬 **Plex:** Medienserver für Filme und Videos  
 - 📸 **Immich:** Fotoverwaltung
+- 🐳 **Docker:** Zauberkasten, mit dem (fast) alles geht
 - 🔒 **VPN:** Sicherer Zugang von unterwegs
 - ...
 
