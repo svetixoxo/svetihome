@@ -21,10 +21,10 @@ plugins:
 
 # Navigation
 header_pages:
-  - start.md
+  - index.md
   - pages/smart-home.md
-  - speicher-backup.md
-  - sicherheit.md
-  - infrastruktur.md
-  - alle-artikel.md
-  - status.md
+  - pages/speicher-backup.md
+  - pages/sicherheit.md
+  - pages/infrastruktur.md
+  - pages/alle-artikel.md
+  - pages/status.md
