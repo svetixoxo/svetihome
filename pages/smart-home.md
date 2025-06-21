@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Smart Home"
+title: "/smart-home"
 ---
 
 test
