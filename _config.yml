@@ -1,0 +1,30 @@
+title: "svetixoxo"
+description: "Mein Homelab-Abenteuer: Cloud, Smart Home & Self-Hosting"
+author: "Svetlana"
+url: "https://svetixoxo.github.io"
+baseurl: ""
+
+# Jekyll Settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+timezone: Europe/Berlin
+
+# Theme
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - start.md
+  - smart-home.md
+  - speicher-backup.md
+  - sicherheit.md
+  - infrastruktur.md
+  - alle-artikel.md
+  - status.md
