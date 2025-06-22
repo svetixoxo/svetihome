@@ -98,11 +98,13 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 
 #### Amortisationsrechnung (5 Jahre)
 
-| Setup                  | Anschaffung | Laufende Kosten (5J) | Gesamtkosten | Speicherkapazität |
-|------------------------|-------------|----------------------|--------------|-------------------|
-| **Hardware-Setup**     | 4.500 €     | 950 €                | **5.500 €**  | 48 TB (RAID 10)   |
-| **Alternatives Setup** | 1.535 €     | 375 €                | **1.900 €**  | 24 TB (RAID 10)   |
-| **Apple Services**     | 0 €         | 2.700 €              | **2.700 €**  | 4 TB              |
+| Setup                       | Anschaffung | Laufende Kosten (5J) | Gesamtkosten | Speicherkapazität |
+|-----------------------------|-------------|----------------------|--------------|-------------------|
+| **Hardware-Setup**          | 4.500 €     | 950 €                | **5.500 €**  | 48 TB (RAID 10)   |
+| **Alternatives Setup**      | 1.535 €     | 375 €                | **1.900 €**  | 24 TB (RAID 10)   |
+| **Apple One Premium 4 TB**  | 0 €         | 2.700 €              | **2.700 €**  | 4 TB              |
+| **Apple One Family 200 GB** | 0 €         | 1.500 €              | **1.500 €**  | 200 GB            |
+| **Downgrade bei Apple**     | 0 €         | -1.200 €              | **-1.200 €**  | 200 GB            |
 
 #### Zusätzliche Faktoren
 
