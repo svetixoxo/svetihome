@@ -3,7 +3,7 @@ layout: home
 title: "~"
 ---
 
-# Guten Tag und ein herzliches „grüß Gott“! 👋
+# Guten Tag und grüß Gott! 👋
 
 Hier dokumentiere ich mein Homelab-Abenteuer mit meinem Heimserver.
 
