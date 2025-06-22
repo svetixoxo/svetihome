@@ -21,7 +21,7 @@ title: 'mnt/cloud'
 
 ---
 
-{% assign speicher_posts = site.posts | where_exp: "post", "post.categories contains 'speicher'" %}
+{% assign speicher_posts = site.posts | where: "categories", "speicher" %}
 
 {% if speicher_posts.size > 0 %}
   <ul>
