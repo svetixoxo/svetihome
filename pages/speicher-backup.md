@@ -4,12 +4,20 @@ permalink: /speicher-backup/
 title: 'mnt/cloud'
 ---
 
+<p>Debug: Anzahl aller Posts: {{ site.posts.size }}</p>
+
+{% for post in site.posts %}
+  <p>Debug: Post "{{ post.title }}" - Kategorien: {{ post.categories | join: ", " }}</p>
+{% endfor %}
+
 {% assign speicher_posts = "" | split: "" %}
 {% for post in site.posts %}
   {% if post.categories contains "speicher" %}
     {% assign speicher_posts = speicher_posts | push: post %}
   {% endif %}
 {% endfor %}
+
+<p>Debug: Gefundene Speicher-Posts: {{ speicher_posts.size }}</p>
 
 {% if speicher_posts.size > 0 %}
   <ul>
