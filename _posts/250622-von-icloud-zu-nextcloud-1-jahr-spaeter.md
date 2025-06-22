@@ -77,18 +77,48 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 
 ### Kosten
 
-- Hardware: Rackmount-NAS wurde angeschafft, hätte aber auch ein Eigenbau sein können; auf einem Raspberry Pi 5 mit M.2-SSD (meine Testumgebung) lief es übrigens auch schnell und zuverlässig
-- Strom: rund 540 kWh
-- Zeit: Initial-Setup (10 Tage), Wartung  (1 Stunde/Monat)
-- vs. Apple One Premium mit 2 TB (35 €/Monat) zzgl. iCloud+ 2 TB (10 €/Monat) = 540 €/Jahr (durch ein Downgrade auf Apple One Family mit 200 GB lägen die Kosten bei 310 €/Jahr, was einer Ersparnis von 230 €/Jahr entspricht)
+#### Hardware-Setup
+- **Rackmount-NAS** (QNAP TR-872AeU-RP): 1.900 €
+- **Speicher** (Seagate Exos x24): 8× 12 TB HDD = 2.250 €
+- **SSD-Cache** (Samsung 980 Pro): 2× 2 TB SSD = 350 €
+- **Gesamtkosten Hauptsystem**: **4.500 €**
+
+#### Alternatives Setup
+- **Raspberry Pi 5** (16 GB RAM): 150 €
+- **M.2-HAT+**: 15 €
+- **SSD**: 512 GB = 50 €
+- **4-bay DAS** (QNAP TR-004): 220 €
+- **Speicher** (wie oben): 4x 270 € = 1.100 €
+- **Gesamtkosten Alternative**: **1.500 €**
+
+#### Laufende Kosten
+- **Stromverbrauch Hardware-Setup**: 540 kWh × 34,65 ct/kWh = **190 €/Jahr**
+- **Stromverbrauch alternatives Setup**: 220 kWh × 34,65 ct/kWh = **75 €/Jahr**
+
+#### Zeitaufwand
+- **Initial-Setup**: 10 Tage
+- **Wartung**: 1 Stunde/Monat
+
+#### Vergleich zu Apple-Diensten
+- **Apple One Premium** (2 TB): 35 €/Monat
+- **iCloud+ zusätzlich** (2 TB): 10 €/Monat
+- **Gesamtkosten Apple**: **540 €/Jahr**
+
+**Alternative bei Downgrade:**
+- Apple One Family (200 GB): 310 €/Jahr
+- **Mögliche Ersparnis**: **230 €/Jahr**
 
 ### Nutzen
 
-- Vollständige Kontrolle über meine Daten
-- Keine Speicherlimits (außer der Hardware)
-- Lerneffekt über Server-Administration
-- Privacy: Meine Daten bleiben bei mir
+#### Technische Vorteile
+- Vollständige Kontrolle über eigene Daten
+- Keine Speicherlimits (außer Hardware-Grenzen)
 - Flexibilität bei Apps und Konfiguration
+
+#### Persönliche Vorteile
+- Privacy: Daten bleiben im eigenen Besitz
+- Lerneffekt: Server-Administration und Selbst-Hosting
+- Unabhängigkeit: Keine Abhängigkeit von Apple-Services
 
 ## Was habe ich gelernt?
 
