@@ -11,23 +11,6 @@ title: 'mnt/cloud'
   {% endif %}
 {% endfor %}
 
-{% if nextcloud_posts.size > 0 %}
-  <ul>
-  {% for post in nextcloud_posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <small> - {{ post.date | date: "%d.%m.%Y" }}</small>
-    </li>
-  {% endfor %}
-  </ul>
-{% else %}
-  <p>Keine Nextcloud-Artikel gefunden.</p>
-{% endif %}
-
----
-
-{% assign speicher_posts = site.posts | where: "categories", "speicher" %}
-
 {% if speicher_posts.size > 0 %}
   <ul>
   {% for post in speicher_posts %}
