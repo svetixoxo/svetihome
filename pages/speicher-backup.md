@@ -4,8 +4,7 @@ permalink: /speicher-backup/
 title: 'mnt/cloud'
 ---
 
-{% assign speicher_posts_temp = site.posts | where: "categories", "speicher" %}
-{% assign nextcloud_posts = speicher_posts_temp | where: "tags", "nextcloud" %}
+{% assign speicher_posts = site.posts | where: "categories", "speicher" %}
 
 {% if nextcloud_posts.size > 0 %}
   <ul>
