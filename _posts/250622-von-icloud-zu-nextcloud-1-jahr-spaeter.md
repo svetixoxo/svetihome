@@ -76,37 +76,43 @@ Aktuell läuft der externe Zugriff noch über das Fritz!Box-VPN. Für die Zukunf
 ## Kosten vs. Nutzen nach einem Jahr
 
 ### Kosten
+#### Hardware-Kosten
 
-#### Hardware-Setup
-- **Rackmount-NAS** (QNAP TR-872AeU-RP): 1.900 €
-- **Speicher** (Seagate Exos x24): 8× 12 TB HDD = 2.250 €
-- **SSD-Cache** (Samsung 980 Pro): 2× 2 TB SSD = 350 €
-- **Gesamtkosten Hauptsystem**: **4.500 €**
+| Komponente              | Hardware-Setup                 | Alternatives Setup              |
+|-------------------------|--------------------------------|---------------------------------|
+| **NAS/Computer**        | QNAP TR-872AeU-RP: 1.900 €     | Raspberry Pi 5 (16GB): 150 €    |
+| **Speicher-Controller** | -                              | M.2-HAT+: 15 €                  |
+| **System-SSD/Cache**    | 2× 2 TB Samsung 980 Pro: 350 € | 512 GB SSD: 50 €                |
+| **Externes Gehäuse**    | -                              | QNAP TR-004: 220 €              |
+| **HDD-Speicher**        | 8× 12 TB Seagate Exos: 2.250 € | 4× 12 TB Seagate Exos: 1.100 €  |
+| **Gesamtkosten**        | **4.500 €**                    | **1.535 €**                     |
 
-#### Alternatives Setup
-- **Raspberry Pi 5** (16 GB RAM): 150 €
-- **M.2-HAT+**: 15 €
-- **SSD**: 512 GB = 50 €
-- **4-bay DAS** (QNAP TR-004): 220 €
-- **Speicher** (wie oben): 4x 270 € = 1.100 €
-- **Gesamtkosten Alternative**: **1.500 €**
+#### Laufende Kosten (jährlich)
 
-#### Laufende Kosten
-- **Stromverbrauch Hardware-Setup**: 540 kWh × 34,65 ct/kWh = **190 €/Jahr**
-- **Stromverbrauch alternatives Setup**: 220 kWh × 34,65 ct/kWh = **75 €/Jahr**
+| Kostenpunkt               | Hardware-Setup       | Alternatives Setup  | Apple Services |
+|---------------------------|----------------------|---------------------|--------------------------------------|
+| **Stromverbrauch**        | 540 kWh = 190 €/Jahr | 220 kWh = 75 €/Jahr | -                                    |
+| **Cloud-Dienste**         | -                    | -                   | Apple One Premium (2 TB): 420 €/Jahr |
+| **Zusätzlicher Speicher** | -                    | -                   | iCloud+ (2 TB): 120 €/Jahr           |
+| **Gesamtkosten/Jahr**     | **190 €**            | **75 €**            | **540 €**                            |
 
-#### Zeitaufwand
-- **Initial-Setup**: 10 Tage
-- **Wartung**: 1 Stunde/Monat
+#### Amortisationsrechnung (5 Jahre)
 
-#### Vergleich zu Apple-Diensten
-- **Apple One Premium** (2 TB): 35 €/Monat
-- **iCloud+ zusätzlich** (2 TB): 10 €/Monat
-- **Gesamtkosten Apple**: **540 €/Jahr**
+| Setup                  | Anschaffung | Laufende Kosten (5J) | Gesamtkosten | Speicherkapazität |
+|------------------------|-------------|----------------------|--------------|-------------------|
+| **Hardware-Setup**     | 4.500 €     | 950 €                | **5.500 €**  | 48 TB (RAID 10)   |
+| **Alternatives Setup** | 1.535 €     | 375 €                | **1.900 €**  | 24 TB (RAID 10)   |
+| **Apple Services**     | 0 €         | 2.700 €              | **2.700 €**  | 4 TB              |
 
-**Alternative bei Downgrade:**
-- Apple One Family (200 GB): 310 €/Jahr
-- **Mögliche Ersparnis**: **230 €/Jahr**
+#### Zusätzliche Faktoren
+
+| Aspekt             | Nextcloud                        | Apple Services               |
+|--------------------|----------------------------------|------------------------------|
+| **Zeitaufwand**    | Wartung: 1 Std./Monat            | minimal                      |
+| **Datenkontrolle** | vollständig                      | eingeschränkt                |
+| **Privacy**        | maximal                          | abhängig von Apple           |
+| **Speicherlimit**  | nur durch Hardware begrenzt      | max. 2 + 12 TB               |
+| **Flexibilität**   | hoch (eigene Apps/Konfiguration) | begrenzt auf Apple-Ökosystem |
 
 ### Nutzen
 
