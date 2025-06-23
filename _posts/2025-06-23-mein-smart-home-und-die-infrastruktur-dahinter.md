@@ -6,8 +6,6 @@ categories: [smart-home]
 excerpt: "Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden."
 ---
 
-# Mein Smart Home und die Infrastruktur dahinter
-
 Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden.
 
 1. [Das Netzwerk als Grundlage](#das-netzwerk-als-grundlage)
