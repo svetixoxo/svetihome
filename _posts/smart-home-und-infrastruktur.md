@@ -104,7 +104,7 @@ Die Zugriffskontrolle erfolgt über differenzierte Benutzerrechte: Die fest inst
 
 ## Kosten und Wirtschaftlichkeit
 
-Die Hardware-Investition in das Smart Home bewegt sich im mittleren fünfstelligen Bereich. Die Kosten beziehen sich dabei nicht auf die Endgeräte (Steckdosen etc. ausgenommen), sondern auf die dafür notwendige smarte Infrastruktur wie Gateways, Bridges und Steuerungskomponenten zur Einbindung in das vernetzte Gesamtsystem.
+Die Hardware-Investition in das Smart Home bewegt sich im mittleren fünfstelligen Bereich. Die Kosten beziehen sich dabei nicht auf die Endgeräte (Klimageräte, Heizungen, NAS etc.), sondern auf die dafür notwendige smarte Infrastruktur wie Gateways, Bridges und Steuerungskomponenten zur Einbindung in das vernetzte Gesamtsystem. Im Grunde also auf den Aufpreis dafür, dass bestimmte Komponenten smart sind oder werden.
 
 Die laufenden Kosten entstehen hauptsächlich durch den Stromverbrauch der Server und der zahlreichen Netzwerkkomponenten.
 
