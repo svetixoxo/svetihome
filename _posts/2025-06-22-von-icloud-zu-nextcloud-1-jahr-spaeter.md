@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Von iCloud zu Nextcloud: 1 Jahr später – ein ehrliches Review"
-date: 2025-06-22 02:30:00 +0100
+date: 2025-06-22
 categories: [speicher]
 excerpt: "Ein Jahr ist vergangen, seit ich den Sprung von iCloud Drive zu Nextcloud gewagt habe. Zeit für ein ehrliches Fazit: Was funktioniert besser als erwartet, wo hakt es noch und würde ich es wieder machen?"
 ---
