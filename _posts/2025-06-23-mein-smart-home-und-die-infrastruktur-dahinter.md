@@ -112,7 +112,7 @@ Die Hardware-Investition in das Smart Home bewegt sich im mittleren fünfstellig
 
 Die laufenden Kosten entstehen hauptsächlich durch den Stromverbrauch der Server und der zahlreichen Netzwerkkomponenten.
 
-Dennoch amortisiert sich die Investition teilweise durch Energieeinsparungen bei der intelligenten Steuerung von Heizung und Klimaanlage sowie durch den Wegfall externer Dienstleister für Überwachung und Wartung. Außerdem ist es irgendwie cool, wenn solche Sachen von selbst laufen bzw. man es so einfach bedienen kann.
+Dennoch amortisiert sich die Investition teilweise durch Energieeinsparungen bei der intelligenten Steuerung von Heizung und Klimaanlage sowie durch den Wegfall externer Dienstleister für Überwachung und Wartung. Außerdem ist es irgendwie cool und macht Spaß.
 
 ## Erfahrungen
 
@@ -122,7 +122,7 @@ So hatte ich bspw. das Dokument verlegt, aus dem hervorging, welche Nummer welch
 
 Gleichzeitig bietet die umfassende Automatisierung einen Komfort, auf den ich nicht mehr verzichten möchte. Das Haus denkt mit – von der automatischen Anpassung der Temperatur über die Beleuchtung bis hin zur Sicherheit und vielem mehr.
 
-Auch wenn ich großen Spaß an der Technik habe, mich dafür interessiere und gerne Zeit damit verbringe, war die professionelle Unterstützung für mich als Noob unverzichtbar. Die Integration der verschiedenen Systeme und das Gesamtkonzept habe ich zusammen mit den Zauberern entwickelt, die auch die Gateways und komplexeren Einbindungen übernommen haben. Ohne diese Expertise wäre ein System dieser Größenordnung und Komplexität für mich allein nicht realisierbar gewesen.
+Auch wenn ich mich für die Technik interessiere und gerne Zeit damit verbringe, war die professionelle Unterstützung für mich als Noob unverzichtbar. Die Integration der verschiedenen Systeme und das Gesamtkonzept habe ich zusammen mit den Zauberern entwickelt, die auch die Gateways und komplexeren Einbindungen übernommen haben. Ohne diese Expertise wäre ein System dieser Größenordnung und Komplexität für mich allein nicht realisierbar gewesen.
 
 ## Ausblick
 
