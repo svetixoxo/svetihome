@@ -60,8 +60,6 @@ Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten 
 
 Für Nextcloud und ähnliche Anwendungen setze ich bereits auf Docker-Container, was sich als sehr praktisch erwiesen hat. Für die restlichen Services stellt sich die Frage: Virtualisierung oder Container? Container bieten den Vorteil geringerer Ressourcennutzung und einfacherer Verwaltung, während Virtualisierung eine stärkere Isolation bietet. Bei der aktuellen Hardware-Ausstattung wäre beides problemlos möglich – für die meisten Smart-Home-Dienste sind Container jedoch die elegantere Lösung.
 
-Beide Systeme nutzen Samsung SSD-Cache (990 Pro bzw. 980 Pro) für bessere Performance bei häufig zugegriffenen Daten.
-
 ## Protokolle und Standards: Warum Apple HomeKit?
 
 Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus mehreren Gründen. Als ausschließlicher Nutzer von Apple-Geräten war die nahtlose Integration ein wichtiger Faktor. Die Home-App bietet dabei eine sehr übersichtliche Benutzeroberfläche, die auch bei der Vielzahl an Geräten nicht unübersichtlich wird. (Gesendet von meinem Lenovo ThinkPad mit Arch Linux)
