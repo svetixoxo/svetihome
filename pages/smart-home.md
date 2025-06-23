@@ -6,7 +6,7 @@ title: '~/smart-home'
 
 {% assign smarthome_posts = "" | split: "" %}
 {% for post in site.posts %}
-  {% if post.categories contains "smart-home" %}
+  {% if post.categories contains "smarthome" %}
     {% assign smarthome_posts = smarthome_posts | push: post %}
   {% endif %}
 {% endfor %}
