@@ -74,7 +74,7 @@ Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin a
 
 Die Klimatisierung des Hauses übernehmen 8 Multi-Split-Klimaanlagen von Mitsubishi Electric, 2 mit je 6,8 kW und 6 mit je 4,2 kW Leistung. Über WLAN-Brücken sind diese in das Smart Home eingebunden. Ergänzt wird das System durch verschiedene Steuermodule und eine Lüftungsanlage (Viessmann Vitovent 300-W).
 
-Die Fußbodenheizung in neun Räumen wird über ein separates Gateway-System gesteuert, das wiederum über eine der Switches in das Smart Home integriert ist. Darüber hinaus ist auch weiterhin eine manuelle Steuerung möglich. Dadurch ist es möglich, auch bei Ausfall einzelner Komponenten die Grundfunktionen aufrechtzuerhalten.
+Die Fußbodenheizung in 9 Räumen wird über ein separates Gateway-System gesteuert, das wiederum über eine der Switches in das Smart Home integriert ist. Darüber hinaus ist auch weiterhin eine manuelle Steuerung möglich. Dadurch ist es möglich, auch bei Ausfall einzelner Komponenten die Grundfunktionen aufrechtzuerhalten.
 
 Für die Sicherheit sorgt eine umfassende Alarmanlage mit 16 Bewegungsmeldern, 50 Tür- und Fensterkontakten, 15 Rauch- und 4 Gasmeldern. Auch diese Anlage ist über ein Gateway in das Netzwerk eingebunden.
 
