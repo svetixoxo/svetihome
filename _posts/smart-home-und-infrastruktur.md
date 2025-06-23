@@ -8,21 +8,60 @@ Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hau
 
 Für die kabelgebundene Infrastruktur kommen drei Netgear-Switches zum Einsatz, nämlich zwei mit jeweils mit 24 Ports und eine mit 48 Ports. Die eine 24er Switch ist für die LAN-Buchsen im Haus sowie Geräte im Netzwerkschrank zuständig. An der anderen 24er Switch laufen die Geräte für das Smart Home zusammen. Die Switch mit 48 Ports verbindet 44 elektrische Jalousien mit dem Netzwerk.
 
-Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox M290 als Firewall-Lösung.
+Für zusätzliche Sicherheit sorgt eine WatchGuard Firebox als Firewall-Lösung.
+
+## Protokolle und Standards: Warum Apple HomeKit?
+
+Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus mehreren Gründen. Als ausschließlicher Nutzer von Apple-Geräten war die nahtlose Integration ein wichtiger Faktor. Die Home-App bietet dabei eine sehr übersichtliche Benutzeroberfläche, die auch bei der Vielzahl an Geräten nicht unübersichtlich wird.
+
+In meiner vorherigen Wohnung hatte ich bereits Erfahrungen mit der Smart-Home-App von Fritz gesammelt, jedoch stellte sich schnell heraus, dass dieses System auf deutlich weniger Geräte ausgelegt und komplett geschlossen ist. Apple HomeKit bietet im Gegensatz dazu ein offenes System, das Geräte verschiedenster Hersteller problemlos einbinden kann. Über Homebridge lassen sich auch Geräte integrieren, die ursprünglich nicht HomeKit-kompatibel sind. HomeKit nutzt dabei verschiedene Protokolle wie WLAN, Zigbee und das neuere Matter/Thread, was eine hohe Flexibilität bei der Gerätewahl ermöglicht.
+
+Herausforderungen bei der Interoperabilität verschiedener Hersteller sind mit Homebridge praktisch nicht existent. Selbst Geräte, die ursprünglich gar nicht für Smart-Home-Anwendungen vorgesehen waren, konnten durch einen spezialisierten Elektrotechnik-Betrieb erfolgreich eingebunden werden. Ein perfektes Beispiel dafür ist die Fußbodenheizung – was die Techniker dort an Integrationsarbeit geleistet haben, bleibt für mich zwar ein Rätsel, aber das Ergebnis funktioniert tadellos und ich bin sehr dankbar für diese Lösung.
+
+Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin aber mit HomeKit soweit sehr zufrieden gewesen. Wer weiß – vielleicht steige ich ja irgendwann um. Bisher ist das aber nicht geplant. Noch nicht.
+
+## Netzwerksegmentierung und VLANs: Sicherheit durch Trennung
+
+Ein wichtiger Sicherheitsaspekt in der Smart-Home-Infrastruktur ist die Netzwerksegmentierung durch VLANs. Dabei wird das physische Netzwerk in mehrere logische Segmente unterteilt, die voneinander isoliert sind. Mit den Fritz!Boxen und Netgear-Switches wurde eine durchdachte VLAN-Segmentierung implementiert, die das Netzwerk in 7 verschiedene Bereiche unterteilt:
+
+- Management und Infrastruktur (2 VLANs)
+- Smart Home, funktionsbasiert (9 VLANs)
+- Sicherheit und Überwachung (4 VLANs)
+- Client-Geräte (4 VLANs)
+- Services und Server (4 VLANs)
+- Fernzugriff und Gäste (3 VLANs)
+- Zukünftige Erweiterungen (3 VLANs)
+
+Vorteile der Segmentierung:
+- Verbesserte Sicherheit: Ein kompromittiertes IoT-Gerät kann nicht auf persönliche Daten in Nextcloud zugreifen
+- Bessere Performance durch reduzierten Broadcast-Traffic
+- Einfacheres Troubleshooting bei Netzwerkproblemen
+- Klare Trennung zwischen Smart-Home-Diensten und persönlichen Services
+- Möglichkeit, unterschiedliche Sicherheitsrichtlinien pro Segment zu implementieren
+
+Diese Struktur hat sich als sehr effektiv erwiesen – sowohl für die Sicherheit als auch für die Netzwerk-Performance bei der Vielzahl vernetzter Geräte.
 
 ## Server-Landschaft: Getrennte Aufgaben
 
 Die Server-Infrastruktur besteht aus zwei QNAP-Systemen.
 
-Das erste ist ein TS-1273AU-RP mit einer NVIDIA Quadro P1000 (Grafikkarte), 64 GB Arbeitsspeicher  und 12 Festplatten mit je 24 TB (Seagate Exos X24). Diese Konfiguration ist ausschließlich für die Videoüberwachung ausgelegt – die Grafikkarte übernimmt dabei das Transcoding von Videos, während der große Speicherplatz die Aufzeichnung von 26 Kameras über längere Zeiträume ermöglicht. Das SSD-Caching übernehmen zwei Samsung 990 Pro mit je 4 TB.
+Das erste ist ein TS-1273AU-RP mit einer NVIDIA Quadro P1000 (Grafikkarte), 64 GB Arbeitsspeicher und 12 Festplatten mit je 24 TB (Seagate Exos X24). Diese Konfiguration ist ausschließlich für die Videoüberwachung ausgelegt – die Grafikkarte übernimmt dabei das Transcoding von Videos, während der große Speicherplatz die Aufzeichnung von 26 Kameras über längere Zeiträume ermöglicht. Das SSD-Caching übernehmen zwei Samsung 990 Pro mit je 4 TB.
 
-Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten mit je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch meine eigene Daten-Cloud. Darüber soll es in diesem Beitrag aber nicht gehen.
+Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten mit je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch meine eigene Daten-Cloud.
+
+Für Nextcloud und ähnliche Anwendungen setze ich bereits auf Docker-Container, was sich als sehr praktisch erwiesen hat. Für die restlichen Services stellt sich die Frage: Virtualisierung oder Container? Container bieten den Vorteil geringerer Ressourcennutzung und einfacherer Verwaltung, während Virtualisierung eine stärkere Isolation bietet. Bei der aktuellen Hardware-Ausstattung wäre beides problemlos möglich – für die meisten Smart-Home-Dienste sind Container jedoch die elegantere Lösung.
 
 Beide Systeme nutzen Samsung SSD-Cache (990 Pro bzw. 980 Pro) für bessere Performance bei häufig zugegriffenen Daten.
 
+## Redundanz und Ausfallsicherheit
+
+Ein kritischer Aspekt bei einer so umfassenden Automatisierung ist die Ausfallsicherheit. Für alle wesentlichen Systeme existieren Redundanz-Konzepte: Die Beleuchtung kann bei Ausfall der Smart-Home-Zentrale über konventionelle Lichtschalter gesteuert werden. Heizung und Klimaanlage behalten ihre ursprünglichen Steuereinheiten als Fallback-Option. Die Alarmanlage funktioniert auch bei Netzwerkausfall autonom und die Jalousien lassen sich über separate Gateways auch manuell bedienen. Die Kameras sind zusätzlich über die NVR-Systeme abgesichert, sodass die Aufzeichnung auch bei Ausfall des Heimservers weiterläuft.
+
+Grundsätzlich gilt: Alle Geräte, die über Gateways eingebunden wurden, verfügen über eine Fallback-Funktionalität, die den Grundbetrieb auch bei Smart-Home-Ausfall gewährleistet.
+
 ## Videoüberwachung: Professionelle Sicherheit
 
-Die Videoüberwachung umfasst 26 Kameras, aufgeteilt in drei verschiedene Typen je nach Einsatzgebiet. Dazu zählen 12 bispektrale Tube-Kameras (Wärmemild) im Außenbereich sowie 8 bispektrale Dome-Kameras (schwenkbar und neigbar) und 6 Fisheye-Kameras (360 Grad) im Innen- und Außenbereich.
+Die Videoüberwachung umfasst 26 Kameras, aufgeteilt in drei verschiedene Typen je nach Einsatzgebiet. Dazu zählen 12 bispektrale Tube-Kameras (Wärmebild) im Außenbereich sowie 8 bispektrale Dome-Kameras (schwenkbar und neigbar) und 6 Fisheye-Kameras (360 Grad) im Innen- und Außenbereich.
 
 Die Kameras laufen an zwei 16-Kanal-NVR-Systemen zusammen, die Speicherung der Aufzeichnungen erfolgt jedoch auf dem 12-Bay-NAS, was eine zentrale Verwaltung, reaktionsfreudigere Handhabung, längere Speicherdauer und bessere Integration via Homebridge ermöglicht.
 
@@ -36,13 +75,19 @@ Für die Sicherheit sorgt eine umfassende Alarmanlage mit 16 Bewegungsmeldern, 5
 
 Die Beleuchtung ist vollständig automatisiert – sowohl die Außenbeleuchtung auf dem Grundstück und am Haus als auch die Innenbeleuchtung in jedem Raum mit direkter und indirekter Beleuchtung. 83 smarte Steckdosen und 25 smarte Lichtschalter mit Dimmer-Funktion (bei Bedarf einsetzbar) ergänzen das System. Bewegungsmelder in jedem Raum sorgen für automatisches Ein- und Ausschalten je nach Anwesenheit.
 
+Ein oft übersehener Aspekt ist die Audio-Integration: In jedem Raum sind Lautsprecher von KEF installiert, die über einen Multiroom-Verstärker von Yamaha ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System mit Dolby Atmos existiert zwar, läuft aber unabhängig vom Smart-Home-System. Sprachsteuerung kommt bewusst nicht zum Einsatz.
+
 Die Jalousien werden ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden. Eine Wetterstation liefert darüber hinaus Wetterdaten für die Automatisierung. So werden etwa alle Jalousien bei starkem Wind hochgefahren oder die Klimaanlagen (je nach Anwesenheit) bei hohen Außentemperaturen eingeschaltet; dies gilt entsprechend auch für die Heizung. Darüber hinaus wird über den Stromverbrauch bestimmter Steckdosen (Computer im Arbeitszimmer, Fernseher im Wohnzimmer, Nachtlicht im Schlafzimmer usw.) erkannt, in welchem Raum bzw. Stockwerk ich gerade unterwegs bin und Klimaanlage bzw. Heizung dort dementsprechend auch etwas stärker eingesetzt.
+
+## Sicherheit und Datenschutz
+
+Ein zentraler Aspekt bei der Planung war die Sicherheit des Systems. Das gesamte Smart-Home-System ist nicht von außen erreichbar und funktioniert ausschließlich lokal. Für den externen Zugriff nutze ich eine VPN-Verbindung, die sicheren Fernzugriff auf alle Komponenten ermöglicht. Lediglich die Kameras sind über die NVR-Systeme auch von außen erreichbar, was für Überwachungszwecke notwendig ist.
+
+Die Zugriffskontrolle erfolgt über differenzierte Benutzerrechte: Die fest installierten iPads haben eigene Apple IDs, können jedoch keine Geräte hinzufügen oder entfernen. Besonders sensitive Bereiche wie die Kamerasteuerung oder Alarmanlage sind über diese Terminals nicht zugänglich – hier ist nur eine Steuerung über eines meiner Admin-Geräte möglich.
 
 ## Zentrale Steuerung und Monitoring
 
-Drei iPad Air mit M1-Chip sind fest in verschiedenen Stockwerken installiert und dienen als zentrale Steuereinheiten. Sie zeigen den Status aller Systeme an und ermöglichen die manuelle Steuerung einzelner Komponenten. Die Integration erfolgt über insgesamt 62 verschiedene Gateways und Bridges, die die unterschiedlichen Protokolle der Geräte in Apple HomeKit übersetzen.
-
-An den Treppenaufgängen jeder Etage ist je ein iPad in der Wand installiert, die als weitere Steuereinheiten dienen. Sie zeigen den Status der jeweiligen Systeme an und ermöglichen die manuelle Steuerung einzelner Komponenten. Darüber hinaus ist eine Steuerung über iPhone, Mac usw. möglich.
+An den Treppenaufgängen jedes Stockwerks ist je ein iPad in der Wand installiert, die als weitere Steuereinheiten dienen. Sie zeigen den Status der jeweiligen Systeme an und ermöglichen die manuelle Steuerung einzelner Komponenten. Darüber hinaus ist eine Steuerung über iPhone, Mac usw. möglich.
 
 ## Kosten und Wirtschaftlichkeit
 
@@ -64,4 +109,4 @@ Gleichzeitig bietet die umfassende Automatisierung einen Komfort, auf den ich ni
 
 Die Infrastruktur ist nie wirklich fertig. Regelmäßig kommen neue Ideen dazu und es stehen immer wieder Optimierungen bei der Energieeffizienz und insbesondere Integration weiterer Automatisierungen auf der Agenda.
 
-Für jeden, der ein ähnliches Projekt plant, empfehle ich, klein anzufangen, alles zu dokumentieren und das System organisch wachsen zu lassen.
+Ein konkretes Zukunftsprojekt ist die automatisierte Gartenbewässerung, die bisher noch nicht realisiert wurde, aber definitiv auf der Roadmap steht.
