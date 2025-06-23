@@ -2,6 +2,19 @@
 
 Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden.
 
+1. [Das Netzwerk als Grundlage](#das-netzwerk-als-grundlage)
+2. [Netzwerksegmentierung und VLANs: Sicherheit durch Trennung](#netzwerksegmentierung-und-vlans-sicherheit-durch-trennung)
+3. [Server-Landschaft: Getrennte Aufgaben](#server-landschaft-getrennte-aufgaben)
+4. [Protokolle und Standards: Warum Apple HomeKit?](#protokolle-und-standards-warum-apple-homekit)
+5. [Smart Home: Vollständige Automatisierung](#smart-home-vollständige-automatisierung)
+6. [Videoüberwachung: Professionelle Sicherheit](#videoüberwachung-professionelle-sicherheit)
+7. [Zentrale Steuerung und Monitoring](#zentrale-steuerung-und-monitoring)
+8. [Redundanz und Ausfallsicherheit](#redundanz-und-ausfallsicherheit)
+9. [Sicherheit und Datenschutz](#sicherheit-und-datenschutz)
+10. [Kosten und Wirtschaftlichkeit](#kosten-und-wirtschaftlichkeit)
+11. [Erfahrungen](#erfahrungen)
+12. [Ausblick](#ausblick)
+
 ## Das Netzwerk als Grundlage
 
 Das Herzstück jeder vernetzten Infrastruktur ist ein stabiles Netzwerk. Als Hauptrouter dient eine AVM Fritz!Box 6690 Cable, die durch fünf weitere Fritz!Box 7590 AX ergänzt wird. Zusätzlich sorgen vier FRITZ!Repeater 6000 und zwei FRITZ!Repeater 3000 für eine weitestgehend lückenlose WLAN-Abdeckung im Haus und Garten. Diese Konfiguration entstand durch die baulichen Gegebenheiten des Grundstücks – im Grunde befinden sich in jedem Stockwerk zwei Router, die über Kabel zusammenlaufen. Die Repeater sorgen dafür, dass das WLAN-Netzwerk auch um das Haus herum sichergestellt ist.
