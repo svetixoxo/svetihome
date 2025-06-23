@@ -2,7 +2,7 @@
 layout: post
 title: "Fertig-NAS oder DIY-Server: Was würde ich heute wählen?"
 date: 2025-06-23
-categories: [infrastruktur, cloud]
+categories: [infrastruktur, smart-home]
 excerpt: "Nach einem Jahr mit meinem QNAP-System stelle ich mir die Frage: Würde ich heute wieder ein Fertig-NAS kaufen oder doch lieber einen DIY-Server bauen? Ich wage einen Vergleich mit praktischen Empfehlungen."
 ---
 
