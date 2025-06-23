@@ -18,7 +18,9 @@ Die Frage „Fertig-NAS oder DIY-Server?“ beschäftigt jeden, der mehr als nur
 
 ### Hardware-Specs und Kosten
 
-Mein QNAP TS-873AeU-RP kostete etwa 1.900 €. Ich erweiterte es auf 64 GB RAM und auf setzte 8 Enterprise Festplatten (Seagate Exos) zu je 12 TB als Speicher sowie zwei Samsung-SSDs zu je 2 TB für das SSD-Caching ein. Als CPU setzt QNAP auf hierbei auf den AMD Ryzen V1500B mit 2,2 GHz (4C/8T). Die Gesamtinvestition lag bei etwa 4.600 €, wobei mit je 280 € pro Stück die Festplatten einen großen Anteil daran ausmachen. Dafür bekam ich ein rackmount-fähiges System mit QuTS hero, dem ZFS-basierten Betriebssystem von QNAP, ausreichend dimensionierte Hardware und einen zuverlässigen RAID-Controller. Außerdem seien wir mal ehrlich: So ein eigener Netzwerkschrank im Rackformat ist schon eine feine Sache.
+Mein QNAP TS-873AeU-RP kostete etwa 1.900 €. Ich erweiterte es auf 64 GB RAM und auf setzte 8 Enterprise Festplatten (Seagate Exos) zu je 12 TB als Speicher sowie zwei Samsung-SSDs zu je 2 TB für das SSD-Caching ein. Als CPU setzt QNAP auf hierbei auf den AMD Ryzen V1500B mit 2,2 GHz (4C/8T). Die Gesamtinvestition lag bei etwa 4.600 €, wobei mit je 280 € pro Stück die Festplatten einen großen Anteil daran ausmachen. Dafür bekam ich ein rackmount-fähiges System mit QuTS hero, dem ZFS-basierten Betriebssystem von QNAP, ausreichend dimensionierte Hardware und einen zuverlässigen RAID-Controller.
+
+Außerdem seien wir mal ehrlich: So ein eigener Netzwerkschrank im Rackformat ist schon eine feine Sache.
 
 ### Was funktioniert gut
 
@@ -30,7 +32,7 @@ Das SSD-Caching mit den Samsung 980 Pro bringt spürbare Performance-Verbesserun
 
 Der größte Kritikpunkt: Vendor Lock-in. QuTS hero ist zwar auf ZFS basiert, aber stark an QNAP-Hardware und -Software gekoppelt. Ich lasse sämtliche Dienste über Docker-Container laufen und habe mit der QNAP-Software im Grunde nichts mehr zu tun.
 
-Heute würde ich lieber Standard-Debian auf der Hardware laufen haben. Das Problem: Ein OS-Wechsel ist praktisch unmöglich, ohne zentrale Funktionen zu verlieren. Das RAID-Management, Hardware-Monitoring oder erweiterte Netzwerkfunktionen wie Link Aggregation (Dual 2,5 GbE) zum Erhöhen der Bandbreite und Ausfallsicherheit durch Zusammenfassen mehrerer Netzwerkverbindungen sind tief ins System integriert, nur um einige wenige Funktionen zu nennen. Inwieweit kompatible Erweiterungskarten für USB 4, 10 bzw. 25 GbE oder GPGPUs (NVIDIA Quadro P1000 oder NVIDIA GeForce GT 1030) dann noch unterstützt würden, entzieht sich meiner Kenntnis.
+Heute würde ich lieber Standard-Debian auf der Hardware laufen haben. Das Problem: Ein OS-Wechsel ist praktisch unmöglich, ohne zentrale Funktionen zu verlieren. Das RAID-Management, Hardware-Monitoring oder erweiterte Netzwerkfunktionen wie Link Aggregation (Dual 2,5 GbE) zum Erhöhen der Bandbreite und Ausfallsicherheit durch Zusammenfassen mehrerer Verbindungen sind tief ins System integriert, nur um einige wenige Funktionen zu nennen. Inwieweit kompatible Erweiterungskarten für USB 4, 10 bzw. 25 GbE oder GPGPUs (NVIDIA Quadro P1000 oder NVIDIA GeForce GT 1030) dann noch unterstützt würden, entzieht sich meiner Kenntnis.
 
 ## Alternativ: Raspberry Pi als Nextcloud-Server
 
@@ -69,7 +71,7 @@ Die USB-Bandbreite wird zum Flaschenhals, wenn mehrere Benutzer gleichzeitig auf
 
 Ein DIY-Server bietet maximale Flexibilität. Der Vollständigkeit halber: „DIY“ steht for „do it yourself“. Für 1.000 € bekommt man bereits ein solides System mit gebrauchter Enterprise-Hardware. Den Stromverbrauch lasse ich jetzt mal außen vor. Für 2.500 € ist ein neues System mit aktueller Hardware möglich, das meinem QNAP-Setup performance-mäßig deutlich überlegen wäre.
 
-Die Frage ist halt immer, wie viel braucht man und wie viel ist genug, damit der Server auch nach mehreren Jahren ausreichend dimensioniert ist? Es kommt halt drauf an, was man damit machen möchte. Es braucht keinen APD EPYC mit 12 CCDs und 192 Kernen, nur um ein Smart Home zu steuern, Nextcloud zu hosten, einen Werbeblocker laufen zu lassen und gelegentlich Medien zu streamen.
+Die Frage ist halt immer, wie viel braucht man und wie viel ist genug, damit der Server auch nach mehreren Jahren ausreichend dimensioniert ist? Es kommt halt drauf an, was man damit machen möchte. Es braucht keinen AMD EPYC mit 12 CCDs und 192 Kernen, nur um ein Smart Home zu steuern, Nextcloud zu hosten, einen Werbeblocker laufen zu lassen und gelegentlich Medien zu streamen.
 
 Für so ein Heizkraftwerk mit CPU-Funktion braucht es einfach mehr als nur eine Steckdose, schon aus Prinzip…
 
