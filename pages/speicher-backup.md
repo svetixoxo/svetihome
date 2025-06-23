@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /speicher-backup/
-title: 'mnt/cloud'
+title: '/mnt/cloud'
 ---
 
 {% assign speicher_posts = "" | split: "" %}
