@@ -62,7 +62,7 @@ Die Entscheidung für Apple HomeKit als zentrale Smart-Home-Plattform fiel aus m
 
 In meiner vorherigen Wohnung hatte ich bereits Erfahrungen mit der Smart-Home-App von Fritz gesammelt, jedoch stellte sich schnell heraus, dass dieses System auf deutlich weniger Geräte ausgelegt und komplett geschlossen ist. Apple HomeKit bietet im Gegensatz dazu ein offenes System, das Geräte verschiedenster Hersteller problemlos einbinden kann. Über Homebridge lassen sich auch Geräte integrieren, die ursprünglich nicht HomeKit-kompatibel sind. HomeKit nutzt dabei verschiedene Protokolle wie WLAN, Zigbee und das neuere Matter/Thread, was eine hohe Flexibilität bei der Auswahl der Geräte ermöglicht.
 
-Herausforderungen bei der Interoperabilität verschiedener Hersteller sind mit Homebridge praktisch nicht existent. Selbst Geräte, die ursprünglich gar nicht für Smart-Home-Anwendungen vorgesehen waren, konnten durch einen spezialisierten Elektrotechnik-Betrieb erfolgreich eingebunden werden. Ein perfektes Beispiel dafür ist die Fußbodenheizung – was die Techniker dort an Integrationsarbeit geleistet haben, bleibt für mich zwar ein Rätsel, aber das Ergebnis funktioniert tadellos und ich bin sehr dankbar für diese Lösung.
+Herausforderungen bei der Interoperabilität verschiedener Hersteller sind mit Homebridge praktisch nicht existent. Selbst Geräte, die ursprünglich gar nicht für Smart-Home-Anwendungen vorgesehen waren, konnten durch einen spezialisierten Elektrotechnik-Betrieb erfolgreich eingebunden werden. Ein perfektes Beispiel dafür ist die Fußbodenheizung – was die Jungs dort an Integrationsarbeit geleistet haben, bleibt für mich zwar ein Rätsel, aber das Ergebnis funktioniert tadellos und ich bin sehr dankbar für diese Lösung.
 
 Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin aber mit HomeKit soweit sehr zufrieden gewesen. Wer weiß – vielleicht steige ich ja irgendwann um. Bisher ist das aber nicht geplant. Noch nicht.
 
@@ -117,6 +117,8 @@ Die größte Herausforderung liegt in der Komplexität des Systems. Je mehr Komp
 So hatte ich bspw. das Dokument verlegt, aus dem hervorging, welche Nummer welche Steckdose hat; der Betrieb, der die Installation dieser Geräte vornahm, hatte auf meine Anweisung auch keine Kopie behalten. Während der Einrichtung und Benennung in der Home-App lief ich also mit iPad in der einen und Tischlampe in der anderen Hand von Steckdose zu Steckdose und schaute, welches Gerät in der Home-App plötzlich Stromverbrauch registrierte, wenn ich die Lampe einschaltete. Das ursprüngliche Papier ist übrigens bis heute nicht wieder aufgetaucht.
 
 Gleichzeitig bietet die umfassende Automatisierung einen Komfort, auf den ich nicht mehr verzichten möchte. Das Haus denkt mit – von der automatischen Anpassung der Temperatur über die Beleuchtung bis hin zur Sicherheit und vielem mehr.
+
+Auch wenn ich großen Spaß an der Technik habe, mich dafür interessiere und gerne Zeit damit verbringe, war die professionelle Unterstützung für mich als Noob unverzichtbar. Die Integration der verschiedenen Systeme und das Gesamtkonzept habe ich zusammen mit den Zauberern entwickelt, die auch die Gateways und komplexeren Einbindungen übernommen haben. Ohne diese Expertise wäre ein System dieser Größenordnung und Komplexität für mich allein nicht realisierbar gewesen.
 
 ## Ausblick
 
