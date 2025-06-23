@@ -4,16 +4,16 @@ permalink: /smart-home/
 title: '~/smart-home'
 ---
 
-{% assign smart-home_posts = "" | split: "" %}
+{% assign smarthome_posts = "" | split: "" %}
 {% for post in site.posts %}
   {% if post.categories contains "smart-home" %}
-    {% assign smart-home_posts = smart-home_posts | push: post %}
+    {% assign smarthome_posts = smarthome_posts | push: post %}
   {% endif %}
 {% endfor %}
 
-{% if smart-home_posts.size > 0 %}
+{% if smarthome_posts.size > 0 %}
   <ul>
-  {% for post in smart-home_posts %}
+  {% for post in smarthome_posts %}
     <li>
       {{ post.date | date: "%d.%m.%Y" }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
