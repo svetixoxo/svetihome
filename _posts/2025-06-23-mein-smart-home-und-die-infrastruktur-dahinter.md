@@ -48,7 +48,7 @@ Vorteile der Segmentierung:
 - Klare Trennung zwischen Smart-Home-Diensten und persönlichen Services
 - Möglichkeit, unterschiedliche Sicherheitsrichtlinien pro Segment zu implementieren
 
-Diese Struktur hat sich als sehr effektiv erwiesen – sowohl für die Sicherheit als auch für die Netzwerk-Performance bei der Vielzahl vernetzter Geräte.
+Diese Struktur hat sich für mich als sehr effektiv erwiesen – sowohl für die Sicherheit als auch für die Netzwerk-Performance bei der Vielzahl vernetzter Geräte. Außerdem habe ich solche Sachen gerne ordentlich strukturiert.
 
 ## Server-Landschaft: Getrennte Aufgaben
 
