@@ -72,17 +72,19 @@ Anfangs hatte ich auch Home Assistant als Alternative in Betracht gezogen, bin a
 
 ## Smart Home: Vollständige Automatisierung
 
-Die Klimatisierung des Hauses übernehmen 8 Multi-Split-Klimaanlagen von Mitsubishi Electric, 2 mit je 6,8 kW und 6 mit je 4,2 kW Leistung. Über WLAN-Brücken sind diese in das Smart Home eingebunden. Ergänzt wird das System durch verschiedene Steuermodule und eine Lüftungsanlage (Viessmann Vitovent 300-W).
+Die **Klimatisierung** des Hauses übernehmen 8 Multi-Split-Klimaanlagen von Mitsubishi Electric, 2 mit je 6,8 kW und 6 mit je 4,2 kW Leistung. Über WLAN-Brücken sind diese in das Smart Home eingebunden. Ergänzt wird das System durch verschiedene Steuermodule und eine Lüftungsanlage (Viessmann Vitovent 300-W).
 
-Die Fußbodenheizung in 9 Räumen wird über ein separates Gateway-System gesteuert, das wiederum über eine der Switches in das Smart Home integriert ist. Darüber hinaus ist auch weiterhin eine manuelle Steuerung möglich. Dadurch ist es möglich, auch bei Ausfall einzelner Komponenten die Grundfunktionen aufrechtzuerhalten.
+Die **Fußbodenheizung** in 9 Räumen wird über ein separates Gateway-System gesteuert, das wiederum über eine der Switches in das Smart Home integriert ist. Darüber hinaus ist auch weiterhin eine manuelle Steuerung möglich. Dadurch ist es möglich, auch bei Ausfall einzelner Komponenten die Grundfunktionen aufrechtzuerhalten.
 
-Für die Sicherheit sorgt eine umfassende Alarmanlage mit 16 Bewegungsmeldern, 50 Tür- und Fensterkontakten, 15 Rauch- und 4 Gasmeldern. Auch diese Anlage ist über ein Gateway in das Netzwerk eingebunden.
+Für die Sicherheit sorgt eine umfassende **Alarmanlage** mit 16 Bewegungsmeldern, 50 Tür- und Fensterkontakten, 15 Rauch- und 4 Gasmeldern. Auch diese Anlage ist über ein Gateway in das Netzwerk eingebunden.
 
-Die Beleuchtung ist vollständig automatisiert – sowohl die Außenbeleuchtung auf dem Grundstück und am Haus als auch die Innenbeleuchtung in jedem Raum mit direkter und indirekter Beleuchtung. 83 smarte Steckdosen und 25 smarte Lichtschalter mit Dimmer-Funktion (bei Bedarf einsetzbar) ergänzen das System. Bewegungsmelder in jedem Raum sorgen für automatisches Ein- und Ausschalten je nach Anwesenheit.
+Die **Beleuchtung** ist vollständig automatisiert – sowohl die Außenbeleuchtung auf dem Grundstück und am Haus als auch die Innenbeleuchtung in jedem Raum mit direkter und indirekter Beleuchtung. 83 smarte Steckdosen und 25 smarte Lichtschalter mit Dimmer-Funktion (bei Bedarf einsetzbar) ergänzen das System. Bewegungsmelder in jedem Raum sorgen für automatisches Ein- und Ausschalten je nach Anwesenheit.
 
-Ein oft übersehener Aspekt ist die Audio-Integration: In jedem Raum sind Lautsprecher von KEF installiert, die über einen Multiroom-Verstärker von Yamaha ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System mit Dolby Atmos existiert zwar, läuft aber unabhängig vom Smart-Home-System. Sprachsteuerung kommt bewusst nicht zum Einsatz.
+Die **Audio-Integration** wird oft übersehen, zumindest kam ich da vergleichsweise spät drauf, obwohl ich viel und gerne Musik höre. In jedem Raum sind Einbaulautsprecher von KEF installiert, die über einen Multiroom-Verstärker von Yamaha ebenfalls in das Smart-Home-System eingebunden sind. Ein separates Heimkino-System existiert zwar, läuft aber unabhängig vom Smart-Home-System. Sprachsteuerung kommt bewusst nicht zum Einsatz.
 
-Die Jalousien werden ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden. Eine Wetterstation liefert darüber hinaus Wetterdaten für die Automatisierung. So werden etwa alle Jalousien bei starkem Wind hochgefahren oder die Klimaanlagen (je nach Anwesenheit) bei hohen Außentemperaturen eingeschaltet; dies gilt entsprechend auch für die Heizung. Darüber hinaus wird über den Stromverbrauch bestimmter Steckdosen (Computer im Arbeitszimmer, Fernseher im Wohnzimmer, Nachtlicht im Schlafzimmer usw.) erkannt, in welchem Raum bzw. Stockwerk ich gerade unterwegs bin und Klimaanlage bzw. Heizung dort dementsprechend auch etwas stärker eingesetzt.
+Die **Jalousien** werden ebenfalls über separate Gateways gesteuert und in das Gesamtsystem eingebunden.
+
+Eine **Wetterstation** liefert darüber hinaus Wetterdaten für die Automatisierung. So werden etwa alle Jalousien bei starkem Wind hochgefahren oder die Klimaanlagen (je nach Anwesenheit) bei hohen Außentemperaturen eingeschaltet; dies gilt entsprechend auch für die Heizung. Darüber hinaus wird über den Stromverbrauch bestimmter Steckdosen (Computer im Arbeitszimmer, Fernseher im Wohnzimmer, Nachtlicht im Schlafzimmer usw.) erkannt, in welchem Raum bzw. Stockwerk ich gerade unterwegs bin und Klimaanlage bzw. Heizung dort dementsprechend auch etwas stärker eingesetzt.
 
 ## Videoüberwachung: Professionelle Sicherheit
 
