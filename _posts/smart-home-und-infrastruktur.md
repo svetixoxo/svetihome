@@ -1,4 +1,4 @@
-# Meine Homelab-Infrastruktur: Ein Überblick
+# Mein Smart Home und die Infrastruktur dahinter
 
 Was als einfaches Smart-Home-Projekt begann, ist inzwischen zu einer umfassenden Infrastruktur gewachsen. In diesem Beitrag gebe ich einen Überblick über die verschiedenen Komponenten und erkläre, warum bestimmte Entscheidungen getroffen wurden.
 
@@ -16,7 +16,7 @@ Die Server-Infrastruktur besteht aus zwei QNAP-Systemen.
 
 Das erste ist ein TS-1273AU-RP mit einer NVIDIA Quadro P1000 (Grafikkarte), 64 GB Arbeitsspeicher  und 12 Festplatten mit je 24 TB (Seagate Exos X24). Diese Konfiguration ist ausschließlich für die Videoüberwachung ausgelegt – die Grafikkarte übernimmt dabei das Transcoding von Videos, während der große Speicherplatz die Aufzeichnung von 26 Kameras über längere Zeiträume ermöglicht. Das SSD-Caching übernehmen zwei Samsung 990 Pro mit je 4 TB.
 
-Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten mit je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden.
+Der zweite Server, ein TS-873AeU-RP mit 64 GB Arbeitsspeicher und 8 Festplatten mit je 12 TB (Seagate Exos X14). Dieses System fungiert als Heimserver. Hier laufen die Automatisierungslogik, Homebridge und weitere Dienste, die für die Haussteuerung erforderlich sind. Das SSD-Caching übernehmen zwei Samsung 980 Pro mit je 2 TB. Über Homebridge können alle Geräte über Apple HomeKit angesteuert werden. Darüber hinaus läuft hierüber mit Nextcloud auch meine eigene Daten-Cloud. Darüber soll es in diesem Beitrag aber nicht gehen.
 
 Beide Systeme nutzen Samsung SSD-Cache (990 Pro bzw. 980 Pro) für bessere Performance bei häufig zugegriffenen Daten.
 
