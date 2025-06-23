@@ -6,8 +6,6 @@ categories: [speicher]
 excerpt: "Ein Jahr ist vergangen, seit ich den Sprung von iCloud Drive zu Nextcloud gewagt habe. Zeit für ein ehrliches Fazit: Was funktioniert besser als erwartet, wo hakt es noch und würde ich es wieder machen?"
 ---
 
-# Von iCloud zu Nextcloud: 1 Jahr später – ein ehrliches Review
-
 Ein Jahr ist vergangen, seit ich den Sprung von iCloud Drive zu Nextcloud gewagt habe. Zeit für ein ehrliches Fazit: Was funktioniert besser als erwartet, wo hakt es noch und würde ich es wieder machen?
 
 ## Warum der Wechsel überhaupt?
