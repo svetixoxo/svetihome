@@ -11,7 +11,7 @@ permalink: /:year/:month/:day/:title/
 timezone: Europe/Berlin
 
 # Theme
-theme: minima
+theme: minimal
 
 # Plugins
 plugins:
